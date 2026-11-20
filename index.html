@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clover — thoughtful gifts, personalised keepsakes and beautifully presented gift boxes.">
+  <title>Clover | Thoughtful Gifts Made With Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="clover-mark" href="#home" aria-label="Clover home">🍀</a>
+    <nav class="nav-left" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a>
+      <a href="#shop">Search</a>
+    </nav>
+    <a class="wordmark" href="#home">Clover</a>
+    <nav class="nav-right" aria-label="Shop navigation">
+      <a href="#shop">Shop</a><a href="#personalise">Personalise</a>
+      <a href="#contact">Contact</a><a href="#help">Help</a>
+      <button class="bag-link" id="bag-open" type="button">Bag <span id="bag-count">0</span></button>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="assets/hero-original-background.png" alt="Blush pink, cream and sage gift boxes decorated with satin ribbons and flowers">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <h1>“You’re in<br>luck — the<br>perfect gift<br>awaits.”</h1>
+        <a class="pill-button light hero-cta" href="#shop">Shop now</a>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" id="shop">
+      <p class="eyebrow">Find something lovely</p>
+      <h2>Explore our categories</h2>
+      <p class="section-lead">Thoughtful gifts, made with love — for people you love.</p>
+      <div class="category-grid">
+        <a class="category-card" href="#candles"><img src="assets/category-candles.jpg" alt="Decorative candles"><span>Candles</span></a>
+        <a class="category-card" href="#flowers"><img src="assets/category-flowers.jpg" alt="Handmade pipe-cleaner flower bouquet"><span>Pipe-cleaner flowers</span></a>
+        <a class="category-card" href="#mugs"><img src="assets/category-mugs.jpg" alt="Colourful handmade mugs"><span>Mugs</span></a>
+        <a class="category-card" href="#cards"><img src="assets/category-cards.jpg" alt="Greeting cards tied with ribbon"><span>Greeting cards</span></a>
+      </div>
+      <p class="intro-note">From personalised mugs to beautiful gift boxes, Clover helps you find thoughtful little presents for the people who mean the most.</p>
+      <p class="signature-line">~ Find your little moment of luck.</p>
+    </section>
+
+    <section class="collection section-wrap" id="candles">
+      <div class="section-heading"><p class="eyebrow">A little warmth</p><h2>Our candle collection</h2><p>Add a little warmth and relaxation to someone’s day with our beautiful candle collection.</p></div>
+      <div class="product-grid two">
+        <article class="product-card">
+          <img src="assets/vanilla-candle.jpg" alt="Classic vanilla scented candle">
+          <h3>Classic vanilla scented candle</h3><p class="price">£8.00</p>
+          <details><summary>Product detail</summary><p>A cosy vanilla-scented candle, perfect for a relaxing evening or a thoughtful little gift.</p></details>
+          <details><summary>Safety info.</summary><p>Never leave a burning candle unattended. Keep away from children, pets and flammable materials.</p></details>
+          <details><summary>Delivery & returns</summary><p>Standard delivery usually takes 3–5 days. Contact us before ordering if you need a specific date.</p></details>
+          <button class="pill-button add-to-bag" data-name="Classic vanilla scented candle" data-price="8">Add to bag</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/luxury-candle.jpg" alt="Luxury gift candle">
+          <h3>Luxury gift candle</h3><p class="price">£12.00</p>
+          <details><summary>Product detail</summary><p>A decorative candle presented beautifully, ready to give to someone special.</p></details>
+          <details><summary>Safety info.</summary><p>Never leave a burning candle unattended. Keep away from children, pets and flammable materials.</p></details>
+          <details><summary>Delivery & returns</summary><p>Standard delivery usually takes 3–5 days. Contact us before ordering if you need a specific date.</p></details>
+          <button class="pill-button add-to-bag" data-name="Luxury gift candle" data-price="12">Add to bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="collection section-wrap" id="flowers">
+      <div class="section-heading"><p class="eyebrow">Made by hand</p><h2>Handmade flower collection</h2><p>Colourful keepsakes that stay bright long after the occasion.</p></div>
+      <div class="product-grid two">
+        <article class="product-card">
+          <img src="assets/mini-flower-bouquet.jpg" alt="Mini handmade pipe-cleaner flower bouquet">
+          <h3>Mini flower bouquet</h3><p class="price">£20.00</p>
+          <p class="description">Our mini flower bouquet is handmade with colourful pipe-cleaner flowers.</p>
+          <label class="field-label" for="mini-colour">Choose your colours</label>
+          <select id="mini-colour"><option>Pink</option><option>Purple</option><option>Yellow</option><option>Mixed colours</option></select>
+          <p class="small-note">Carefully packaged and ready to give to someone special.</p>
+          <button class="pill-button add-to-bag" data-name="Mini flower bouquet" data-price="20">Add to bag</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/deluxe-flower-bouquet.jpg" alt="Deluxe handmade flower bouquet">
+          <h3>Deluxe flower bouquet</h3><p class="price">£40.00</p>
+          <p class="description">A larger handmade bouquet for an extra special gift.</p>
+          <label class="field-label" for="deluxe-colour">Choose your colours</label>
+          <select id="deluxe-colour"><option>Pink</option><option>Purple</option><option>Yellow</option><option>Mixed colours</option></select>
+          <p class="small-note">Carefully packaged and ready to give to someone special.</p>
+          <button class="pill-button add-to-bag" data-name="Deluxe flower bouquet" data-price="40">Add to bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="collection section-wrap" id="mugs">
+      <div class="section-heading"><p class="eyebrow">A gift with their name on it</p><h2>Personalised mugs</h2><p>Create a gift that is personal, thoughtful and made especially for someone.</p></div>
+      <div class="product-grid two">
+        <article class="product-card">
+          <img src="assets/name-mug.jpg" alt="Personalised name mug">
+          <h3>Personalised name mug</h3><p class="description">A mug customised with the name of your choice (330ml).</p><p class="price">£4.99</p>
+          <label class="field-label" for="mug-name">Name</label><input id="mug-name" placeholder="Type a name" maxlength="24">
+          <label class="field-label" for="mug-colour">Colour</label><select id="mug-colour"><option>Blush pink</option><option>Cream</option><option>White</option></select>
+          <button class="pill-button add-to-bag" data-name="Personalised name mug" data-price="4.99">Add to bag</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/photo-mug.jpg" alt="Personalised photo mug">
+          <h3>Personalised photo mug</h3><p class="description">Custom image and name (330ml).</p><p class="price">£5.99</p>
+          <label class="field-label" for="photo-name">Name</label><input id="photo-name" placeholder="Type a name" maxlength="24">
+          <label class="field-label" for="photo-side">Personalise image</label><select id="photo-side"><option>One side — right</option><option>One side — left</option><option>Both sides</option></select>
+          <button class="pill-button add-to-bag" data-name="Personalised photo mug" data-price="5.99">Add to bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="collection section-wrap" id="cards">
+      <div class="section-heading"><p class="eyebrow">A little message goes a long way</p><h2>Greeting cards</h2><p>Find a card for every special moment.</p></div>
+      <div class="product-grid two">
+        <article class="product-card">
+          <img src="assets/birthday-card.jpg" alt="Birthday greeting card">
+          <h3>Birthday card</h3><p class="price">£3.00</p>
+          <label class="field-label" for="birthday-message">Inside message</label><textarea id="birthday-message" placeholder="Write your message here"></textarea>
+          <button class="pill-button add-to-bag" data-name="Birthday card" data-price="3">Add to bag</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/congratulations-card.jpg" alt="Congratulations greeting card">
+          <h3>Congratulations card</h3><p class="price">£3.00</p>
+          <label class="field-label" for="congrats-message">Inside message</label><textarea id="congrats-message" placeholder="Write your message here"></textarea>
+          <button class="pill-button add-to-bag" data-name="Congratulations card" data-price="3">Add to bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="gift-box-section" id="gift-boxes">
+      <div class="gift-box-images"><img src="assets/ready-made-box.jpg" alt="Ready-made gift box"><img src="assets/gift-box-detail.jpg" alt="Gift box contents"></div>
+      <div class="gift-box-copy">
+        <p class="eyebrow">For every occasion, even the unexpected</p><h2>Choose your ready-made gift box</h2>
+        <h3>Sweet moments box</h3><p>A ready-made gift for a birthday, thank-you or special surprise.</p>
+        <p class="price">£25.00 – £35.00</p>
+        <h4>What’s inside?</h4><p>Chocolates, a greeting card, pipe-cleaner flowers and/or a candle, depending on the box.</p>
+        <label class="field-label" for="box-size">Choose a size</label><select id="box-size"><option value="25">Small box — £25.00</option><option value="35">Regular box — £35.00</option></select>
+        <label class="field-label" for="box-message">Add a personal message</label><textarea id="box-message" placeholder="Type your card message here"></textarea>
+        <p class="preview-label">Your card preview</p><div class="message-preview" id="box-preview">Your words will appear here</div>
+        <button class="pill-button" id="add-box">Add to bag</button>
+      </div>
+    </section>
+
+    <section class="personalise section-wrap" id="personalise">
+      <div class="personalise-image"><img src="assets/personalised-box.jpg" alt="A personalised gift box"></div>
+      <div class="personalise-content">
+        <p class="eyebrow">Made just for them</p><h2>Personalise your box</h2>
+        <label class="field-label" for="custom-size">Choose gift box</label><select id="custom-size"><option value="25">Small box — £25.00</option><option value="35">Regular box — £35.00</option></select>
+        <fieldset><legend>Choose products you like</legend>
+          <label><input type="checkbox" value="Scented candle"> Scented candle</label>
+          <label><input type="checkbox" value="Personalised mug"> Personalised mug</label>
+          <label><input type="checkbox" value="Chocolate"> Chocolate</label>
+          <label><input type="checkbox" value="Flowers"> Flowers</label>
+        </fieldset>
+        <label class="field-label" for="custom-message">Add a personal message</label><textarea id="custom-message" placeholder="Type your card message here"></textarea>
+        <div class="message-preview" id="custom-preview">Your words will appear here</div>
+        <button class="pill-button" id="add-custom-box">Add to bag</button>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-copy"><p class="eyebrow">A little about us</p><h2>Our story</h2><p>Clover was created to make gift shopping easier, more enjoyable and more personal. We understand that finding the right gift can sometimes be difficult, especially when you are short on time. That’s why we offer a collection of thoughtful gifts, personalised products and beautifully presented gift boxes.</p></div>
+      <img src="assets/about-gifts.jpg" alt="Thoughtfully arranged gifts and keepsakes">
+      <div class="aim"><h2>Our aim</h2><p>Welcome to Clover! We make gift shopping simple by offering thoughtful, beautifully presented gifts for every occasion. Whether you’re celebrating a birthday, saying thank you or surprising someone special, we have something for you.</p></div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <p class="eyebrow">We’d love to hear from you</p><h2>Delivery & contact</h2>
+      <div class="delivery-notes"><p>• Next-day delivery may be available for orders placed before the cut-off time, subject to confirmation.</p><p>• Standard delivery is usually 3–5 days. Please contact us to confirm your area and delivery cost before ordering.</p></div>
+      <h3>Contact us</h3><p>Have a question? Ask about our gift boxes, card messages or delivery before placing an order.</p>
+      <form id="contact-form">
+        <label class="field-label" for="contact-name">Name</label><input id="contact-name" required placeholder="Your name">
+        <label class="field-label" for="contact-email">E-mail</label><input id="contact-email" type="email" required placeholder="Your email address">
+        <label class="field-label" for="contact-message">Message</label><textarea id="contact-message" required placeholder="How can we help?"></textarea>
+        <button class="pill-button" type="submit">Send message</button>
+        <p class="form-feedback" id="contact-feedback" role="status"></p>
+      </form>
+    </section>
+
+    <section class="help section-wrap" id="help">
+      <p class="eyebrow">A few helpful details</p><h2>Help & information</h2>
+      <details><summary>How long does delivery take?</summary><p>Standard delivery is usually 3–5 days. Next-day delivery needs to be confirmed before ordering.</p></details>
+      <details><summary>Can I add a personal message?</summary><p>Yes. Add your message in the personalisation field when choosing a gift box or greeting card.</p></details>
+      <details><summary>Can I choose the flower colours?</summary><p>Yes. Choose pink, purple, yellow or mixed colours on the flower product cards.</p></details>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="#top">Clover</a><p>Thoughtful gifts, made with love.</p><a href="#help">Terms & conditions</a></footer>
+
+  <aside class="bag-drawer" id="bag-drawer" aria-hidden="true">
+    <div class="bag-head"><h2>Your bag</h2><button id="bag-close" aria-label="Close bag">×</button></div>
+    <div id="bag-items" class="bag-items"><p>Your bag is empty.</p></div>
+    <div class="bag-total"><strong>Total</strong><strong id="bag-total">£0.00</strong></div>
+    <button class="pill-button" id="checkout-button">Continue</button>
+    <p class="small-note">Demo website: checkout is not connected to a payment service.</p>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <script src="script.js"></script>
+</body>
+</html>
